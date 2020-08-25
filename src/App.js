@@ -132,7 +132,7 @@ function SignUp() {
       <Row>
         <Col>
 
-          <Breadcrumb class="bready">
+          <Breadcrumb>
             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
             <Breadcrumb.Item href="/signUp" active>
               Sign Up
@@ -251,7 +251,7 @@ function Contact() {
         </Breadcrumb>
 
         
-        <h2 class="aboutThisSection">Contact</h2></Col>
+        <h2 class="aboutThisSection">Let's Grow Together!</h2></Col>
       </Row>
 
 <Row>
@@ -260,11 +260,11 @@ function Contact() {
   </div>
 
   <Card>
-  <div class="text-center">
-  <Card.Header as="h5">Let's Grow Together!</Card.Header>
+  <div >
+  <Card.Header as="h5">Help us in providing nourishment and food security to others, building connections, & beautifying the community!</Card.Header>
   </div>
   <Card.Body>
-    <Card.Title> Help us in Providing Nourishment and Food Security to Others, Building Connections, & Beautifying the Community</Card.Title>
+    
     <Alert variant="danger">
     <Alert.Heading>Be our pen pal!</Alert.Heading>
     <Card.Text class="cardText">
