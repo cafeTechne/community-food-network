@@ -73,7 +73,7 @@ export default function App() {
                 <Nav.Link to="/donate">
                   <ButtonGroup className="d-flex">
                     <Button variant="success">
-                      Donate
+                      Support
                 </Button>
                   </ButtonGroup>
                 </Nav.Link>
@@ -135,12 +135,12 @@ function SignUp() {
           <Breadcrumb>
             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
             <Breadcrumb.Item href="/signUp" active>
-              Sign Up
+              Join
             </Breadcrumb.Item>
           </Breadcrumb>
 
           
-        <h2 class="aboutThisSection">Sign Up</h2>
+        <h2 class="aboutThisSection">Get Involved!</h2>
 
         <Form>
         <Form.Row>
@@ -270,7 +270,7 @@ function Contact() {
     <Card.Text class="cardText">
       We respond to e-mails as soon as possible.
     </Card.Text>
-    <div class="text-center">
+    <div class="text-center buttonBumper">
     <Button variant="danger" block>E-mail</Button>
     </div>
     </Alert>
@@ -283,7 +283,7 @@ function Contact() {
       
       Discord is a chat web app we use to communicate about events and to socialize--join us!
       
-      <div class="text-center">
+      <div class="text-center buttonBumper">
       <Button variant="info" block>Discord</Button>
       </div>  
     </Alert>
@@ -295,11 +295,11 @@ function Contact() {
 
 
     <Card.Text class="cardText">
-    <Alert variant="success">
+    <Alert variant="secondary">
     <Alert.Heading>Nerd Alert!</Alert.Heading>
       Slack is a chat web app we use for boring paperwork related stuff. This link only applies to people who are good at doing paperwork. If that sounds like you, then please send us an email and we will grant you access.
-      <div class="text-center">
-    <Button variant="success" block>Slack</Button>
+      <div class="text-center buttonBumper">
+    <Button variant="secondary" block>Slack</Button>
     </div>
       </Alert>
     </Card.Text>
