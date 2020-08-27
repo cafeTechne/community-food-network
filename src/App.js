@@ -1,13 +1,14 @@
 
 import React from 'react';
 import logo from './logo.svg';
+import gardenPicture from './gardenPicture.jpg';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import { Button, Nav, Navbar, Form, FormControl, Container, Col, Row, NavDropdown, ButtonGroup, Card, Alert} from 'react-bootstrap';
+import { Button, Badge, Image, Nav, Navbar, Form, FormControl, Container, Col, Row, NavDropdown, ButtonGroup, Card, Alert, Jumbotron, CardColumns} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './App.css';
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
@@ -119,7 +120,105 @@ function Home() {
   return <div>
     <Container>
       <Row>
-        <Col><h2 class="aboutThisSection">Home</h2></Col>
+        <Col>
+        
+        <h2 class="aboutThisSection"><span class="cfnBrand">Community <span class="cfnLineBreak"> </span> Food Network</span> <span class="cfnLineBreak"> </span>@ Grand Rapids</h2>
+        <Jumbotron>
+  <h1>Productively addressing food insecurity.</h1>
+  <p>
+  <Badge variant="dark">The</Badge>{' '}
+  <Badge variant="success">idea</Badge>{' '}
+  <Badge pill variant="dark">is</Badge>{' '}
+  <Badge variant="success">simple</Badge>{' '}
+
+  : start with donated parcels and try to scale the number and size of our gardens to the point where we can start to make a real impact in the well being of our community. It all begins with you! Do you have a small plot of land we could plant vegetables on? Do you have tools you would like to share--or teach others how to use? <span class="importantInfoOnFrontPage">Please feel free to join us and we'll send you an introductory e-mail with further information and a google calendar invite to our regularly held team meetings!</span>
+  </p>
+  <p>
+    <Button variant="danger">Get Involved!</Button>
+  </p>
+</Jumbotron>
+
+<CardColumns>
+  
+  <Card className="text-right" bg="dark" text="white">
+    <blockquote className="blockquote mb-0 card-body">
+      <p>
+        “The single greatest lesson the garden teaches is that our relationship to the planet need not be zero-sum, and that as long as the sun still shines and people still can plan and plant, think and do, we can, if we bother to try, find ways to provide for ourselves without diminishing the world. ”
+      </p>
+      <footer className="blockquote-footer">
+        <small className="text-muted">
+        Michael Pollan in <cite title="Source Title">The Omnivore's Dilemma: A Natural History of Four Meals</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </Card>
+
+  <Card bg="dark" text="white">
+    <Card.Body>
+      <Card.Title>Support</Card.Title>
+      <Card.Text>
+        We are still getting off the ground and getting ready for our first season, so our main timeline puts us in a fundraising drive until soil-prep starts in 2021. If you are planning on volunteering with us, or leasing land, then please contact us as soon as possible so we can square away the necessary details! Otherwise, any direct support would be greatly appreciated!
+      </Card.Text>
+      <Card.Text>
+      <Button variant="success" block>Support</Button>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  
+  <Card className="text-right" bg="dark" text="white">
+    <blockquote className="blockquote mb-0 card-body">
+      <p>
+      “No occupation is so delightful to me as the culture of the earth, and no culture comparable to that of the garden. … But though an old man, I am but a young gardener.”
+      </p>
+      <footer className="blockquote-footer">
+        <small className="text-muted">
+        Thomas Jefferson in a letter to Charles W. Peale <cite title="Source Title">1811</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </Card>
+
+
+  <Card className="text-right" bg="light" text="white">
+  
+  <Card.Img variant="top" src={gardenPicture} />
+    
+  </Card>
+
+
+  <Card bg="dark" text="white">
+    <Card.Body>
+      <Card.Title>Support</Card.Title>
+      <Card.Text>
+        We are still getting off the ground and getting ready for our first season, so our main timeline puts us in a fundraising drive until soil-prep starts in 2021. If you are planning on volunteering with us, or leasing land, then please contact us as soon as possible so we can square away the necessary details! Otherwise, any direct support would be greatly appreciated!
+      </Card.Text>
+      <Card.Text>
+      <Button variant="success" block>Support</Button>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  
+  <Card className="text-right" bg="dark" text="white">
+    <blockquote className="blockquote mb-0 card-body">
+      <p>
+        “The single greatest lesson the garden teaches is that our relationship to the planet need not be zero-sum, and that as long as the sun still shines and people still can plan and plant, think and do, we can, if we bother to try, find ways to provide for ourselves without diminishing the world. ”
+      </p>
+      <footer className="blockquote-footer">
+        <small className="text-muted">
+        Michael Pollan in <cite title="Source Title">The Omnivore's Dilemma: A Natural History of Four Meals</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </Card>
+
+  
+</CardColumns>
+
+
+        
+        </Col>
       </Row>
     </Container>
   </div>;
