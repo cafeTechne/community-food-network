@@ -1,3 +1,11 @@
+<h1> Community Food Network </h1>
+
+Is a simple app I started building out to serve as the landing page for a 501 (c) 3 I am currently in the process of forming a board for. If you care about local food security for at-risk neighbors, and would care to get involved, then please send an email to cafetechne@gmail.com
+
+This project uses react-bootstrap, react, and bootstrap. I am currently designing the API and plan on pushing it with express.js and mongodb.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
