@@ -1,4 +1,5 @@
 
+/* global google */
 import React from 'react';
 import logo from './logo.svg';
 import gardenPicture from './gardenPicture.jpg';
@@ -12,6 +13,7 @@ import { Button, Badge, Image, Nav, Navbar, Form, FormControl, Container, Col, R
 import { LinkContainer } from 'react-router-bootstrap';
 import './App.css';
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 
 // axios.<method> will now provide autocomplete and parameter typings
@@ -82,6 +84,19 @@ export default function App() {
             </Nav.Item>
 
 
+            <Nav.Item>
+              <LinkContainer to="/farmstandMap">
+                <Nav.Link to="/farmstandMap">
+                  <ButtonGroup className="d-flex">
+                    <Button variant="warning">
+                      Map
+                </Button>
+                  </ButtonGroup>
+                </Nav.Link>
+              </LinkContainer>
+            </Nav.Item>
+
+
           </Nav>
 
         </Navbar.Collapse>
@@ -101,6 +116,9 @@ export default function App() {
             <Contact />
           </Route>
 
+          <Route path="/farmstandMap">
+            <FarmstandMap />
+          </Route>
 
           <Route path="/donate">
             <Donate />
@@ -306,9 +324,20 @@ function SignUp() {
   </div>;
 
 }
+const mapStyles = {
+  width: '100%',
+  height: '100%',
+};
 
 
-
+function FarmstandMap(){
+  return <Map
+          google={this.props.google}
+          zoom={8}
+          style={mapStyles}
+          initialCenter={{ lat: 47.444, lng: -122.176}}
+        />
+}
 
 
 function Donate() {
@@ -419,3 +448,4 @@ function HasLand() {
 function HasHands() {
   return <h2>I have hands!</h2>;
 }
+
